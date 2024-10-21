@@ -1,0 +1,143 @@
+.header{
+  display: flex;
+  width: 100%;
+  background-color: #58749c;
+  color: aliceblue;
+  min-height: 40px;
+  align-items: center; 
+  justify-content: left;
+  padding-left: 11%;
+  position: fixed;
+  top: 0;
+}
+
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  gap: 2rem;
+  max-width: 80%;
+  min-width: 500px;
+  margin: 15px auto;
+  
+  @media (max-width: 900px) {
+    flex-direction: column;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.message{
+  max-width: 500px;
+}
+
+.side-bar{
+  flex-shrink: 0;
+  width: 10rem;
+  color: #58749c;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.list-item {
+  list-style:none;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+
+
+.list-item:hover{
+  background-color: #e1e5eb;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.text{
+  flex: 1;
+  margin-bottom: 15px;
+  padding: 15px 20px 10px 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: #d0d0d0 1.8px solid;
+}
+
+.img-cat{
+  width: 100%;
+}
+
+
+.line{
+  flex: inherit;
+  background-color: #d0d0d0;
+  min-height: 3px;
+  margin: 8px 0 6px 0;
+}
+
+.line-text{
+  margin: 8px -20px 6px -20px;
+  width: calc(100% + 40px);
+}
+
+.Evaluate{
+  display: flex;
+  justify-content: space-between;
+  color: #58749c;
+}
+
+
+.right-info p{
+  background-color: #edeef0;
+}
+
+.fisrt-info{
+  padding: 15px 20px 10px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: #d0d0d0 1.8px solid;
+}
+
+.second-info{
+  padding: 15px 20px 10px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: #d0d0d0 1.8px solid;
+}
+
+.fisrt-info,
+.second-info {
+  width: 15rem;
+}
+
+.footer{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: rgb(153, 153, 153);
+  background-color: white;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .right-info{
+    display: none;
+  }
+
+  /* .content{
+      align-items: center;
+  } */
+
+
+}
